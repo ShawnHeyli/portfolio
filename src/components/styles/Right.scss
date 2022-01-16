@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Changa&display=swap');
+
+$gray:#928374;
+$red:#fb4934;
+$green:#b8bb26;
+$yellow:#fabd2f;
+$blue:#83a598;
+$purple:#d3869b;
+$aqua:#8ec07c;
+$black:#1d2021;
+
+$bg:#ebdbb2;
+$fg:#282828;
+
+.Right {
+  max-width: 50vw;
+  width: auto;
+
+  margin-left:auto;
+
+  grid-column: 2;
+
+  display: grid;
+  grid-template-rows: repeat(auto-fit, minmax(20vh, 1fr));
+
+  .card {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    border: 1rem $fg solid; 
+    background-color: $bg;
+    color: $fg;
+
+    &Body {
+      grid-column: 1;
+      text-align: left;
+
+      padding: 2rem;
+
+      display: flex;
+      flex-direction: column;
+
+      .cardType {
+        color: grey;
+
+        font-size: 16px;
+        font-family: 'Changa';
+      }
+
+      .cardTitle {
+        margin-top: 0;
+        margin-bottom: 4rem;
+
+        font-size: 42px;
+        font-family: 'Lobster';
+      }
+
+      .cardDescription {
+        margin-bottom: 4rem;
+
+        font-size: 20px;
+        font-family: 'Playfair Display';
+      }
+
+      .links {
+        display: flex;
+
+        font-size: 16px;
+        font-family: 'Changa';
+
+        .cardProjectLink {
+          text-decoration: underline;
+          color: $fg;
+          &:hover{
+            transition: all ease-out 0.2s;
+            color: $gray;
+          }
+        }
+
+        .cardSourceLink {
+          text-decoration: underline;
+          margin-left: 1rem;
+          color: $fg;
+          &:hover{
+            transition: all ease-out 0.2s;
+            color: $gray;
+          }
+        }
+      }
+
+      .cardLanguages {
+        font-size: 16px;
+
+        font-family: 'Changa';
+      }
+    }
+
+    &Image {
+      grid-column: 2;
+
+      display: grid;
+      justify-content: center;
+      align-items: center;
+
+      padding-right: 1rem;
+    }
+  }
+}
