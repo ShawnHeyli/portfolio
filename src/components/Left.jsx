@@ -7,24 +7,24 @@ export default function Left() {
 			<div className='Top'>
 				<ul className='SocialList'>
 					<li className='SocialListItem'>
-						<a className='SocialListItemLink' href='https://www.krvin.com/'>
+						<a className='SocialListItemLink' href='#'>
 							Github
 						</a>
 					</li>
 					<li className='SocialListItem'>
-						<a className='SocialListItemLink' href='https://www.krvin.com/'>
+						<a className='SocialListItemLink' href='#'>
 							Linkedin
 						</a>
 					</li>
 				</ul>
 				<ul className='SocialList'>
 					<li className='SocialListItem'>
-						<a className='SocialListItemLink' href='https://www.krvin.com/'>
+						<a className='SocialListItemLink' href='#'>
 							Email
 						</a>
 					</li>
 					<li className='SocialListItem'>
-						<a className='SocialListItemLink' href='https://www.krvin.com/'>
+						<a className='SocialListItemLink' href='#'>
 							Mon CV
 						</a>
 					</li>

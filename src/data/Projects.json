@@ -5,8 +5,8 @@
     "size":"normal",
     "title": "Abalone Game",
     "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat incidunt deleniti quaerat optio dignissimos, ratione adipisci laborum voluptatem molestias. Laboriosam ut sit eaque eligendi enim itaque, possimus corrupti illo vitae.",
-    "projectLink":"https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Global_Objects/JSON/parse",
-    "sourceLink": "https://www.krvin.com/",
+    "projectLink":"#",
+    "sourceLink": "#",
     "languages":"Java",
     "image": "https://risibank.fr/cache/medias/0/10/1013/101398/full.png"
   },
@@ -16,7 +16,7 @@
     "size":"normal",
     "title": "Abalone Game",
     "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat incidunt deleniti quaerat optio dignissimos, ratione adipisci laborum voluptatem molestias. Laboriosam ut sit eaque eligendi enim itaque, possimus corrupti illo vitae.",
-    "sourceLink": "https://www.krvin.com/",
+    "sourceLink": "#",
     "languages":"Java",
     "image": "https://risibank.fr/cache/medias/0/10/1013/101398/full.png"
   },
@@ -27,7 +27,7 @@
     "title": "Abalone Game",
     "projectLink":"",
     "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat incidunt deleniti quaerat optio dignissimos, ratione adipisci laborum voluptatem molestias. Laboriosam ut sit eaque eligendi enim itaque, possimus corrupti illo vitae.",
-    "sourceLink": "https://www.krvin.com/",
+    "sourceLink": "#",
     "languages":"Java",
     "image": "https://risibank.fr/cache/medias/0/10/1013/101398/full.png"
   }
