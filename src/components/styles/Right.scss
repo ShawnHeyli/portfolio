@@ -2,108 +2,103 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Changa&display=swap');
 
-$gray:#928374;
-$red:#fb4934;
-$green:#b8bb26;
-$yellow:#fabd2f;
-$blue:#83a598;
-$purple:#d3869b;
-$aqua:#8ec07c;
-$black:#1d2021;
+$gray: #928374;
+$red: #fb4934;
+$green: #b8bb26;
+$yellow: #fabd2f;
+$blue: #83a598;
+$purple: #d3869b;
+$aqua: #8ec07c;
+$black: #1d2021;
 
-$bg:#ebdbb2;
-$fg:#282828;
-
+$bg: #ebdbb2;
+$fg: #282828;
 .Right {
-  max-width: 50vw;
-  width: auto;
+	display: grid;
 
-  margin-left:auto;
+	.card {
+		display: grid;
+		border: 1rem $fg solid;
+		background-color: $bg;
+		color: $fg;
 
-  grid-column: 2;
+		&Body {
+			grid-column: 1;
+			text-align: left;
 
-  display: grid;
-  grid-template-rows: repeat(auto-fit, minmax(20vh, 1fr));
+			padding: 2rem;
 
-  .card {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    border: 1rem $fg solid; 
-    background-color: $bg;
-    color: $fg;
+			display: flex;
+			flex-direction: column;
 
-    &Body {
-      grid-column: 1;
-      text-align: left;
+			.cardType {
+				color: grey;
 
-      padding: 2rem;
+				font-size: 16px;
+				font-family: 'Changa';
+			}
 
-      display: flex;
-      flex-direction: column;
+			margin-top: 0;
+			margin-bottom: 2rem;
 
-      .cardType {
-        color: grey;
+			font-size: 32px;
+			font-family: 'Lobster';
+		}
 
-        font-size: 16px;
-        font-family: 'Changa';
-      }
+		.cardDescription {
+			margin-bottom: 4rem;
 
-      .cardTitle {
-        margin-top: 0;
-        margin-bottom: 4rem;
+			font-size: 20px;
+			font-family: 'Playfair Display';
+		}
 
-        font-size: 42px;
-        font-family: 'Lobster';
-      }
+		.links {
+			display: flex;
 
-      .cardDescription {
-        margin-bottom: 4rem;
+			font-size: 16px;
+			font-family: 'Changa';
 
-        font-size: 20px;
-        font-family: 'Playfair Display';
-      }
+			.cardProjectLink {
+				text-decoration: underline;
+				color: $fg;
 
-      .links {
-        display: flex;
+				&:hover {
+					transition: all ease-out 0.2s;
+					color: $gray;
+				}
+			}
 
-        font-size: 16px;
-        font-family: 'Changa';
+			.cardSourceLink {
+				text-decoration: underline;
+				margin-left: 1rem;
+				color: $fg;
 
-        .cardProjectLink {
-          text-decoration: underline;
-          color: $fg;
-          &:hover{
-            transition: all ease-out 0.2s;
-            color: $gray;
-          }
-        }
+				&:hover {
+					transition: all ease-out 0.2s;
+					color: $gray;
+				}
+			}
+		}
 
-        .cardSourceLink {
-          text-decoration: underline;
-          margin-left: 1rem;
-          color: $fg;
-          &:hover{
-            transition: all ease-out 0.2s;
-            color: $gray;
-          }
-        }
-      }
+		.cardLanguages {
+			font-size: 16px;
+			font-family: 'Changa';
+		}
+	}
+}
 
-      .cardLanguages {
-        font-size: 16px;
+/* RIGHT */
+@media screen and (max-width: 900px) {
+	.Right {
+		grid-row: 2;
+	}
+}
 
-        font-family: 'Changa';
-      }
-    }
-
-    &Image {
-      grid-column: 2;
-
-      display: grid;
-      justify-content: center;
-      align-items: center;
-
-      padding-right: 1rem;
-    }
-  }
+/* RIGHT */
+@media screen and (min-width: 900px) {
+	.Right {
+		width: 40vw;
+		margin-left: auto;
+		grid-column: 2;
+	}
 }

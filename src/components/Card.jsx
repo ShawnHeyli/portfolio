@@ -44,7 +44,7 @@ Card.Languages = function CardLanguages({ children }) {
 Card.Image = function CardImage({ src, alt }) {
 	return (
 		<div className='cardImage'>
-			<img src={src} alt={alt} className='cardImage' />
+			<img src={src} alt={alt} />
 		</div>
 	);
 };

@@ -1,8 +1,23 @@
-.App {
-  display: grid;
-  grid-template-columns: 2;
+* {
+	margin: 0;
+	padding: 0;
 }
 
-body{
-  margin: 0;
+.App {
+	display: grid;
+	align-items: center;
+}
+
+/* APP */
+@media screen and (max-width: 900px) {
+	.App {
+		grid-template-rows: repeat(auto-fit, minmax(600px, 40vh));
+	}
+}
+
+/* APP */
+@media screen and (min-width: 900px) {
+	.App {
+		grid-template-columns: repeat(auto-fit, minmax(40vw, 50vw));
+	}
 }

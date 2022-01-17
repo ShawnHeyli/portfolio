@@ -1,6 +1,6 @@
 import Card from './Card';
-import './styles/Right.scss';
 import projects from '../data/Projects.json';
+import './styles/Right.scss';
 
 export default function Right() {
 	return (
@@ -40,7 +40,9 @@ export default function Right() {
 							</div>
 							<Card.Languages>{project.languages}</Card.Languages>
 						</Card.Body>
+						{/*
 						<Card.Image src={project.image} alt='image'></Card.Image>
+            */}
 					</Card>
 				);
 			})}
